@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.file-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input + label {
+  text-align: center;
+  padding: 80px 120px;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px dashed #ccc;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-input:focus + label,
+.file-input + label:hover {
+  background-color: #f0f0f0;
+}
+
+#render-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  position: fixed;
+}

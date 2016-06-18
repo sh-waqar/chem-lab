@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CHEM-LAB</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <script type="text/javascript" src="static/bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CHEM-LAB</h1>
+        </header>
+        <div>
+            <input type="file" class="file-input" id="file-uploader" accept=".txt,.smi"></input>
+            <label for="file-uploader">Drag and Drop <br/>or<br/> Select a SMILE file</label>
+        </div>
+        <pre id="cords"></pre>
+        <div id="render-container">
+            <canvas id="renderer-canvas" width="200" height="200"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
